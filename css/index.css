@@ -1,4 +1,4 @@
-头部导航模块 .fl {
+.fl {
   float: left;
 }
 .fr {
@@ -68,6 +68,9 @@
 .fot-header .container11 {
   margin: auto;
   height: auto;
+}
+.fot-header .container11 .row {
+  margin: 0;
 }
 .fot-header .container11 .row div p {
   position: relative;
