@@ -1,0 +1,95 @@
+头部导航模块 .fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.header-nav {
+  background-color: #333333;
+}
+.header-nav .container .row {
+  margin: 0;
+}
+.header-nav .container .row .nav-1 {
+  display: none;
+}
+.header-nav .container .row .nav-1 li {
+  height: 44px;
+  width: 11.11%;
+  float: left;
+  text-align: center;
+  line-height: 44px;
+  display: block;
+  font-size: 14px;
+}
+.header-nav .container .row .nav-1 li a:hover {
+  color: #ccc;
+}
+.header-nav .container .row .nav-2 {
+  display: none;
+}
+.header-nav .container .row .nav-2 li {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  width: 33.33%;
+  float: left;
+}
+.banner .container .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+.img-icon {
+  margin-bottom: 1px;
+  overflow: hidden;
+}
+.img-icon .row ul li {
+  border-right: 3px solid #fff;
+  height: 200px;
+  margin-bottom: 2px;
+  padding-right: 2px;
+}
+.img-icon .row ul li:nth-child(1) {
+  background: url('../img/ico1.png') no-repeat center center;
+}
+.img-icon .row ul li:nth-child(2) {
+  background: url('../img/ico2.png') no-repeat center center;
+}
+.img-icon .row ul li:nth-child(3) {
+  background: url('../img/ico3.png') no-repeat center center;
+}
+.img-icon .row ul li:nth-child(4) {
+  background: url('../img/ico4.png') no-repeat center center;
+}
+.fot-header {
+  background: #f5f5f5;
+  margin-bottom: 1px;
+}
+.fot-header .container11 {
+  margin: auto;
+  height: auto;
+}
+.fot-header .container11 .row div p {
+  position: relative;
+}
+.fot-header .container11 .row div p img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fot-header .container11 .row div ol li a {
+  color: #000;
+  font-size: 10px;
+}
+.fot-header .container11 .row div ol li a:hover {
+  border-bottom: 1px solid #000;
+}
+.fot-txt {
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  background-color: #f5f5f5;
+  font-size: 12px;
+  color: #8B8B8B;
+}

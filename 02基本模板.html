@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- meta描述网页元信息 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap</title>
+  <style>
+      @media screen and (max-width: 992px) {
+          .fot-header>.container11>.row>div>ol{
+            display:none;
+            margin-left:14px;
+          }
+          .fot-header>.container11>.row>div>p{
+            height: 30px;
+            margin-left:10px;
+            line-height:30px;
+          }
+      }
+  </style>
+    <!-- 修改成 本地的文件-->
+    <link rel="stylesheet" href="./Bootstrap插件/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./swiper插件/lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- 修改兼容ie678的文件为本地路径 -->
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="html5shiv/html5shiv.min.js"></script>
+      <script src="respond/respond.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div class="lay">
+      <!-- 版心  导航-->
+      <header class="header-nav">
+        <div class="container">
+          <div class="row">
+            <!-- 导航条 -->
+            <ul class="nav-1 visible-lg visible-md">
+              <li><a href="#"><img src="./img/lo.png" alt=""></a></li>
+              <li><a href="#">Mac</a> </li>
+              <li><a href="#">iPad</a> </li>
+              <li><a href="#">iPhone</a> </li>
+              <li><a href="#">Watch</a> </li>
+              <li><a href="#">Music</a> </li>
+              <li><a href="#">技术支持</a> </li>
+              <li><a href="#"><img src="./img/sc.png" alt=""></a></li>
+              <li><a href="#"><img src="./img/lock.png" alt=""></a></li>
+             </ul>
+             <!-- 导航二 -->
+                <ul class="nav-2 visible-sm visible-xs">
+                  <li><img src="./img/mu.png" alt=""></li>
+                  <li><img src="./img/lo.png" alt=""></li>
+                  <li><img src="./img/lock.png" alt=""></li>
+                </ul>
+             </div>
+          </div>
+      </header>
+      <!-- 轮播图 -->
+      <div class="banner">
+          <div class="container">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./img/banner1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/banner2.png" alt=""></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <!-- <div class="swiper-button-next"></div> -->
+              <!-- <div class="swiper-button-prev"></div> -->
+          </div>
+          </div>
+      </div>
+    
+      <!-- 底部图片模块 -->
+      <div class="img-icon">
+        <div class="row">
+          <ul>
+            <li class="col-lg-3 col-md-6 col-sm-12 col-xs-12" ></li>
+            <li class="col-lg-3 col-md-6 col-sm-12 col-xs-12" ></li>
+            <li class="col-lg-3 col-md-6 col-sm-12 col-xs-12" ></li>
+            <li class="col-lg-3 col-md-6 col-sm-12 col-xs-12" ></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 底部导航 -->
+      <footer class="fot-header">
+        <div class="container11">
+          <div class="row">
+            <div class="col-md-2 col-xs-12">
+              <p>选购及了解<img src="./img/ioc1.png" alt=""></p>
+              <ol>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">配件</a></li>
+              </ol>
+            </div>
+            <div class="col-md-2 col-xs-12">
+              <p>Apple Store商店<img src="./img/ioc1.png" alt=""></p>
+                <ol>
+                  <li><a href="#">查找零售店</a></li>
+                  <li><a href="#">Genius Bar天才吧</a></li>
+                  <li><a href="#">讲座和学习</a></li>
+                  <li><a href="#">青少年活动</a></li>
+                  <li><a href="#">Apple Store App</a></li>
+                  <li><a href="#">翻新产品</a></li>
+                  <li><a href="#">分期付款</a></li>
+                  <li><a href="#">重复使用和循环利用</a></li>
+                  <li><a href="#">订单状态</a></li>
+                  <li><a href="#">选购帮助</a></li>
+                </ol>
+            </div>
+            <div class="col-md-2 col-xs-12">
+              <p>商务应用 <img src="./img/ioc1.png" alt=""></p>
+                <ol>
+                  <li><a href="#">iPhone商务应用</a></li>
+                  <li><a href="#">iPad商务应用</a></li>
+                  <li><a href="#">Mac 商务应用</a></li>
+                  <li><a href="#">商务选购</a></li>
+                </ol>
+            </div>
+            <div class="col-md-2 col-xs-12">
+              <p>教育应用<img src="./img/ioc1.png" alt=""></p>
+              <ol>
+                <li><a href="#">Apple与教育</a></li>
+                <li><a href="#">高校师生选购</a></li>
+                <li><h5>Apple 价值观</h5></li>
+                <li><a href="#">环境责任</a></li>
+                <li><a href="#">供应商责任</a></li>
+                <li><a href="#">辅助功能</a></li>
+                <li><a href="#">隐私</a></li>
+              </ol>
+            </div>
+            <div class="col-md-2 col-xs-12">
+              <p>帐户<img src="./img/ioc1.png" alt=""></p>
+              <ol>
+                <li><a href="#">管理你的 Apple ID</a></li>
+                <li><a href="#">Apple Store 帐户</a></li>
+                <li><a href="#">iCloud.com</a></li>
+              </ol>
+            </div>
+            <div class="col-md-2 col-xs-12">
+              <p>关于 Apple<img src="./img/ioc1.png" alt=""></p>
+              <ol>
+                <li><a href="#">查找零售店</a></li>
+                <li><a href="#">Apple 资讯</a></li>
+                <li><a href="#">工作机会</a></li>
+                <li><a href="#">媒体资讯</a></li>
+                <li><a href="#">活动</a></li>
+                <li><a href="#">热点新闻</a></li>
+                <li><a href="#">法律信息</a></li>
+                <li><a href="#">联系 Apple</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer class="fot-txt">
+        京公安网安备 11010500896 京ICP备10214630
+      </footer>
+    </div>
+
+    <!-- 修改js文件为本地路径地址 -->
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="/Bootstrap插件/jquery/jquery.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="Bootstrap插件/bootstrap/js/bootstrap.js"></script>
+    <script src="./swiper插件/lib/swiper/js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.banner .container .swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop:true,
+    });
+        // console.log($('.col-md-2 p img'));
+        // console.log($('.col-md-2 p'));
+        var bool=true;
+        $('.col-md-2 p').on('click',function(){
+          $(this).siblings('ol').slideToggle();
+          var that=$(this)
+          if(bool){
+            bool=false
+            that.children().attr('src','./img/ioc2.png');
+            // console.log($('.col-md-2 p img'));
+            console.log(that.children().attr('src'));
+          }else{
+            bool=true
+            that.children().attr('src','./img/ioc1.png');
+          }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://3.swiper.com.cn/usage/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Swiper3使用方法 - Swiper3|Swiper中文网</title>
+<meta name="keywords" content="Swiper基础应用，Swiper3.x中文教程，Swiper hello world">
+<meta name="description" content="本文是Swiper3.x基础教程。通过下载基础示例包，查看基础演示等，10分钟即可轻松上手Swiper。">
+<link href="./Swiper3使用方法 - Swiper3_Swiper中文网_files/base.css" rel="stylesheet" media="screen" type="text/css">
+<link href="./Swiper3使用方法 - Swiper3_Swiper中文网_files/layout.css" rel="stylesheet" media="screen" type="text/css">
+<link rel="stylesheet" href="./Swiper3使用方法 - Swiper3_Swiper中文网_files/highlight.css">
+<link rel="stylesheet" href="./Swiper3使用方法 - Swiper3_Swiper中文网_files/xcode.css">
+<script src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/osd.js"></script><script src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/f(6).txt"></script><script src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/f(7).txt" id="google_shimpl"></script><script src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<link rel="shortcut icon" href="https://3.swiper.com.cn/templets/default/images/favicon.png">
+<link rel="preload" href="./Swiper3使用方法 - Swiper3_Swiper中文网_files/f(8).txt" as="script"><script type="text/javascript" src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/f(8).txt"></script></head>
+<body id="usage">
+
+<div id="header"><div class="inner">
+<ul id="nav">
+<li id="logo"><a href="https://3.swiper.com.cn/"><img alt="Swiper3|Swiper中文网" title="Swiper3中文网" src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/logo.png" width="82" height="50"></a></li>
+<li><a href="https://3.swiper.com.cn/">首页</a></li>
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="https://3.swiper.com.cn/usage/index.html#">在线演示</a> <b></b>
+<ul>
+<li><a href="https://3.swiper.com.cn/demo/index.html">Swiper3基础演示</a> </li>
+<li><a href="https://3.swiper.com.cn/demo/senior/index.html">Swiper3精彩应用（移动）</a> </li>
+<li><a href="https://3.swiper.com.cn/demo/web/index.html">Swiper3精彩应用（PC）</a> </li>
+</ul>
+</li>
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="https://3.swiper.com.cn/usage/index.html#">中文教程</a>  <b></b>
+<ul>
+<li><a href="https://3.swiper.com.cn/usage/index.html">Swiper3使用方法</a> </li>
+<li><a href="https://3.swiper.com.cn/usage/animate/index.html">Swiper Animate使用方法</a> </li>
+<li><a href="https://3.swiper.com.cn/usage/dom7/index.html">Swiper3与DOM</a> </li>
+</ul>
+</li>
+<li><a href="https://3.swiper.com.cn/api/index.html">API 文档</a> </li>
+
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="https://3.swiper.com.cn/usage/index.html#">获取Swiper</a>  <b></b>
+<ul>
+<li><a href="https://3.swiper.com.cn/download/index.html">下载Swiper3</a>  </li>
+<li><a href="https://3.swiper.com.cn/cdn/index.html">Swiper3 CDN地址</a></li>
+<li><a href="https://3.swiper.com.cn/custom/index.html">自定义Swiper文件</a></li>
+</ul></li>
+
+<li class="tobbs"><a href="http://bbs.swiper.com.cn/" target="_blank">交流、分享</a></li>
+<li><a href="http://2.swiper.com.cn/" target="_blank">Swiper2</a></li>
+<li><a href="http://www.swiper.com.cn/" target="_blank">Swiper5</a></li>
+</ul>
+<div class="search" id="search">
+      <form name="formsearch" action="https://3.swiper.com.cn/plus/search.php">
+        <div class="form">
+           <input type="hidden" name="kwtype" value="0">
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="搜索参数" onfocus="if(this.value==&#39;搜索参数&#39;){this.value=&#39;&#39;;}" onblur="if(this.value==&#39;&#39;){this.value=&#39;搜索参数&#39;;}">
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        
+    </div>
+</div></div>
+<div class="full">
+
+
+
+<div class="innerbox"><h1 class="sw-title">
+	Swiper3使用方法</h1>
+<p class="title">
+	1.首先加载插件，需要用到的文件有<a href="https://3.swiper.com.cn/download/index.html#file7" target="_blank">swiper.min.js</a>和<a href="https://3.swiper.com.cn/download/index.html#file5" target="_blank">swiper.min.css</a>文件。</p>
+<pre class="code"><code class="hljs xml"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    ...
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"path/to/</span></span><strong><span class="hljs-tag"><span class="hljs-value">swiper.min.css</span></span></strong><span class="hljs-tag"><span class="hljs-value">"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    ...
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"path/to/</span></span><strong><span class="hljs-tag"><span class="hljs-value">swiper.min.js</span></span></strong><span class="hljs-tag"><span class="hljs-value">"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code></pre>
+<p>
+	如果你的页面加载了<a href="https://3.swiper.com.cn/download/index.html#file2">jQuery.js</a>或者<a href="https://3.swiper.com.cn/download/index.html#file3">zepto.js</a>，你可以选择使用更轻便的<a href="https://3.swiper.com.cn/download/index.html#file4" target="_blank">swiper.jquery.min.js</a>。</p>
+<div style="position:relative;">
+	<div style="position:absolute;right:11px;top:11px;width:300px;height:250px;">
+		<script async="" src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/f(9).txt"></script>
+<!-- swiper3-使用方法 -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8527457878009645" data-ad-slot="2393243481" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="250" frameborder="0" src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-google-query-id="CN6jqdOKgewCFRzCTAIdAVsG0Q" data-load-complete="true"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<pre class="code"><code class="hljs xml"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    ...
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"path/to/</span></span><strong><span class="hljs-tag"><span class="hljs-value">swiper.min.css</span></span></strong><span class="hljs-tag"><span class="hljs-value">"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    ...
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"path/to/</span></span><strong><span class="hljs-tag"><span class="hljs-value">jquery.js</span></span></strong><span class="hljs-tag"><span class="hljs-value">"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"path/to/</span></span><strong><span class="hljs-tag"><span class="hljs-value">swiper.jquery.min.js</span></span></strong><span class="hljs-tag"><span class="hljs-value">"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code></pre>
+</div>
+<p class="title">
+	2.HTML内容。</p>
+<pre class="code"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-wrapper"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-slide"</span>&gt;</span>Slide 3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- 如果需要分页器 --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-pagination"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    
+    <span class="hljs-comment">&lt;!-- 如果需要导航按钮 --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-button-prev"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-button-next"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    
+    <span class="hljs-comment">&lt;!-- 如果需要滚动条 --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"swiper-scrollbar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span style="color:#a9a9a9;"><span style="font-size:12px;">导航等组件可以放在container之外</span></span></code></pre>
+<p class="title">
+	3.你可能想要给Swiper定义一个大小，当然不要也行。</p>
+<pre class="code"><code class="hljs css"><span class="hljs-class">.swiper-container</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">600px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">300px</span></span></span>;
+<span class="hljs-rule">}</span></span>  </code></pre>
+<p class="title">
+	4.初始化Swiper：最好是挨着&lt;/body&gt;标签</p>
+<pre class="code"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">        
+  <span class="hljs-keyword">var</span> mySwiper = <span class="hljs-keyword">new</span> Swiper (<span class="hljs-string">'.swiper-container'</span>, {
+    direction: <span class="hljs-string">'vertical'</span>,
+    loop: <span class="hljs-literal">true</span>,
+    
+    <span class="hljs-comment">// 如果需要分页器</span>
+    pagination: <span class="hljs-string">'.swiper-pagination'</span>,
+    
+    <span class="hljs-comment">// 如果需要前进后退按钮</span>
+    nextButton: <span class="hljs-string">'.swiper-button-next'</span>,
+    prevButton: <span class="hljs-string">'.swiper-button-prev'</span>,
+    
+    <span class="hljs-comment">// 如果需要滚动条</span>
+    scrollbar: <span class="hljs-string">'.swiper-scrollbar'</span>,
+  })        
+  </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span></code></pre>
+<p>
+	如果不能写在HTML内容的后面，则需要在页面加载完成后再初始化。</p>
+<pre class="code"><code class="hljs r">&lt;script type=<span class="hljs-string">"text/javascript"</span>&gt;
+window.onload = <span class="hljs-keyword">function</span>() {
+  <span class="hljs-keyword">...</span>
+}
+&lt;/script&gt;</code></pre>
+<p class="title">
+	或者这样（Jquery和Zepto）</p>
+<pre class="code"><code class="hljs r">&lt;script type=<span class="hljs-string">"text/javascript"</span>&gt;
+$(document).ready(<span class="hljs-keyword">function</span> () {
+ <span class="hljs-keyword">...</span>
+})
+&lt;/script&gt;</code></pre>
+<p class="title">
+	5.完成。恭喜你，现在你的Swiper应该已经能正常切换了。现在开始添加各种<a href="https://3.swiper.com.cn/api/index.html" target="_blank">选项和参数</a>丰富你的Swiper，开启华丽移动前端创作之旅。</p>
+<br>
+<h1 class="sw-title">
+	Swiper3 视频教程</h1>
+<div style="display:inline-block;">
+	<a href="https://study.miaov.com/study/show/chapter/271" target="_blank"><img height="200" src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/miaoweiketang.jpg" style="display:block;"> </a>
+	<p style="background:#f8f8f8;padding:15px;margin:0;">
+		<a href="https://study.miaov.com/study/show/chapter/271" target="_blank">Swiper和TweenMax移动端实战 - 妙味课堂[免费]</a></p>
+</div>
+<div style="margin-left:20px;display:inline-block;">
+	<a href="https://ke.qq.com/course/228147" target="_blank"><img height="200" src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/tengxunketang.jpg" style="display:block;"> </a>
+	<p style="background:#f8f8f8;padding:15px;margin:0;">
+		<a href="https://ke.qq.com/course/228147" target="_blank">Swiper移动端触摸滑动轮播器 - 腾讯课堂[9.8元]</a></p>
+</div>
+
+
+
+<br><br>
+
+
+
+</div>
+
+
+</div>
+
+<div id="footer">
+  <div class="inner">
+ 
+  <div id="copyright">
+  Copyright © 2014-2017 Swiper中文网,<a href="https://3.swiper.com.cn/usage/index.html#" style="color:inherit; text-decoration:none;" onclick="javascript:window.open(&#39;http://www.beian.miit.gov.cn&#39;);return false;">粤ICP备15001020号</a>, All Rights Reserved。  </div>
+  
+  </div>
+</div>
+<script language="javascript">
+function display(li){    
+li.className='sub active';
+var subdis=li.getElementsByTagName("ul")[0];    
+subdis.style.display="block";    
+}
+function ndisplay(li){ 
+li.className='sub noactive';   
+var subdis=li.getElementsByTagName("ul")[0];        
+subdis.style.display="None";    
+}
+var preBtn=document.querySelectorAll('.pre-btn');
+for (var j=0; j<preBtn.length; j++) {
+preBtn[j].onclick = function(){
+	this.style.display='none';
+	this.parentNode.querySelector('.pre-load').style.display='none';
+	myframe=this.parentNode.querySelector('iframe');
+	framesrc=myframe.attributes["data-src"].value;
+	myframe.setAttribute("src",framesrc);
+}
+}
+
+</script>
+
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6387fcb06c7f33ad6787ab913d4e6d10' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=6387fcb06c7f33ad6787ab913d4e6d10" target="_blank"><img border="0" src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/21.gif" width="20" height="20"></a>
+
+<div>
+
+
+</div></div><iframe id="google_osd_static_frame_57564797618" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/saved_resource(1).html"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/ads(1).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-load-complete="true"></iframe></ins></ins></ins></body><iframe id="google_esf" name="google_esf" src="./Swiper3使用方法 - Swiper3_Swiper中文网_files/zrt_lookup.html" data-ad-client="ca-pub-8527457878009645" style="display: none;"></iframe></html>
